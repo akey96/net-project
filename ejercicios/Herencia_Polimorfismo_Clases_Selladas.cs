@@ -64,7 +64,7 @@ namespace ConsoleApplication1
         }
     }
 
-    class Gusano: Animal
+    sealed class Gusano: Animal
     {
         public override void HacerRuido()
         {
@@ -72,5 +72,12 @@ namespace ConsoleApplication1
         }
     }
 
+/*
+//  La clase GusanoNegro no puede extender de Gusano, por que es una clase sellada que no puede ser extendida, pero si instanceada
+    class GusanoNegro: Gusano
+    {
+
+    }
+*/
 
 }
